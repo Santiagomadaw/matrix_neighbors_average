@@ -31,4 +31,3 @@ def matrix_average( matrix):
                                   range(len(matrix))))
   
 
-print(matrix_average([[0,1,1,1],[1,2,2,1],[1,2,2,1]]))
