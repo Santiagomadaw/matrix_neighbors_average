@@ -28,7 +28,7 @@ matriz_entrada = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-```
+
 # Calcular la matriz de promedios
 matriz_resultado = matrix_average(matriz_entrada)
 
@@ -37,7 +37,7 @@ print("Matriz de Entrada:")
 print(matriz_entrada)
 print("Matriz de Promedios:")
 print(matriz_resultado)
-
+```
 ### Detalles de Implementación
 
 - La función `neighbors_average` utiliza funciones internas para verificar si un índice no es el primero o el último en su dimensión respectiva.
@@ -83,7 +83,7 @@ matrix_input = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-```
+
 # Calculate the matrix of averages
 matrix_result = matrix_average(matrix_input)
 
@@ -92,7 +92,7 @@ print("Input Matrix:")
 print(matrix_input)
 print("Matrix of Averages:")
 print(matrix_result)
-
+```
 ### Implementation Details
 
 - The `neighbors_average` function utilizes internal functions to check whether an index is not the first or last in its respective dimension.
