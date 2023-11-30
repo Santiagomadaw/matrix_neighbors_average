@@ -83,7 +83,7 @@ matrix_input = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-
+```
 # Calculate the matrix of averages
 matrix_result = matrix_average(matrix_input)
 
