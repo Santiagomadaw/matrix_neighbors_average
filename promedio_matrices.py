@@ -1,29 +1,16 @@
+from functools import reduce
 
-def neighbors_average(matrix,indexx,indexy):  
-  sum, amount = 0 , 0
-  last = len(matrix)-1
+def neighbors_average(matrix,indexx,indexy):
+ 
+  elements=matrix[indexx][max(indexy-1,0):
+  min(indexy+2, len(matrix[indexx]))] + [matrix[i][indexy] 
+  for i in range(max(indexx - 1, 0), min(indexx + 2, len(matrix)))
+  if matrix[i][indexy] != matrix[indexx][indexy]]
+  return round(reduce(lambda accum, n : accum + n, elements )/len(elements),2)
   
-  def isnt_first(index): return index > 0
-  def isnt_last(index):  return index < last
-  
-  if isnt_first(indexx):
-    sum = sum + matrix[indexx][indexy-1]
-    amount += 1
-  if isnt_last(indexy):
-    sum = sum + matrix[indexx][indexy+1]
-    amount += 1
-  if isnt_first(indexx):
-    sum = sum + matrix[indexx-1][indexy]
-    amount += 1
-  if isnt_last(indexx):
-    sum = sum + matrix[indexx+1][indexy]
-    amount += 1
-  
-  return round((matrix[indexx][indexy] + sum )/(amount + 1),2)
-
 
 def new_row(indexx, matrix):
-  return list(map(lambda  indexy: neighbors_average(matrix, indexx, indexy),
+  return list(map(lambda  indexy: neighbors_average(matrix,indexx,indexy),
                                   range (len(matrix[indexx]))))
   
 def matrix_average( matrix):  
@@ -31,3 +18,4 @@ def matrix_average( matrix):
                                   range(len(matrix))))
   
 
+print(matrix_average([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]))
