@@ -28,7 +28,7 @@ matriz_entrada = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-
+```
 # Calcular la matriz de promedios
 matriz_resultado = matrix_average(matriz_entrada)
 
