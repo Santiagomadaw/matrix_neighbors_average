@@ -1,3 +1,6 @@
+Idioma: [🇬🇧](#🇬🇧) / / [🇪🇸](#🇪🇸)
+
+## 🇪🇸
 
 ## Práctica con Listas en Python
 
@@ -55,6 +58,10 @@ print(matriz_resultado)
 ### Licencia
 
 Este proyecto está bajo la licencia [Licencia MIT](LICENSE).
+
+Idioma: [🇬🇧](#🇬🇧) / / [🇪🇸](#🇪🇸)
+
+## 🇬🇧
 
 ## Practice with Lists in Python
 
